@@ -1,0 +1,59 @@
+#map {
+    height: 100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* Add this style for the search box */
+#search-box {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 7.5px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #whi-box {
+    position: absolute;
+    bottom: 2px; /* Adjust as needed */
+    left: 2px; /* Adjust as needed */
+    width: 2cm;
+    height: 2cm;
+    background-color: white;
+    border: 0px solid #ccc;
+  }
+  #white-box {
+    position: absolute;
+    bottom: 0px; /* Adjust as needed */
+    left: 2px; /* Adjust as needed */
+    width: 2cm;
+    height: 2cm;
+    background-color: white;
+    background: url('HERE_logo.svg.png') center bottom / cover no-repeat;
+    border: 0px solid #ccc;
+  }
+
+  #bottom-right-box {
+    position: absolute;
+    bottom: 0px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    width: 10cm; /* Adjust as needed */
+    height: 0.5cm; /* Adjust as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0px; /* Adjust as needed */
+    text-align: left; /* Align text to the left */
+    vertical-align: top; /* Align text at the top of the box */
+  }
+
+  

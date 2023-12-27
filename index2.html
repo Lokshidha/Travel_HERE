@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>Search for a Location based on an Address</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
+    <link rel="stylesheet" type="text/css" href="../template.css" />
+    <script type="text/javascript" src='script2.js'></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+  </head>
+  <input type="text" id="search-input" placeholder="Enter location">
+<button onclick="searchLocation()">Search</button>
+
+  <body id="geocode">
+    <div class="page-header">
+        <h1>Search for a Location based on an Address</h1>
+        <p>Request a location using a free-form text input and display it on the map.</p>
+    </div>
+    <!-- <p>This example makes a geocoding request and retrieves the latitude, longitude and
+      complete address details of <b>200 S Mathilda Ave, Sunnyvale, CA</b> based on a free-form
+      text input. A clickable marker is placed on the location found.</p> -->
+    <div id="map"></div>
+    <div id="panel"></div>
+    
+    <!-- <p>Access to the geocoding service is obtained from the <code>H.service.Platform</code>
+       by calling <code>getSearchService()</code>. The <code>geocode()</code> method is used
+       to find a location by passing in the relevant <code>q</code> parameter as defined in
+       <a href="https://www.here.com/docs/bundle/geocoding-and-search-api-v7-api-reference/page/index.html#/paths/~1geocode/get" target="_blank">Geocoding and Search API v7</a>.
+       The styling and display of the response is under the control of the developer.</p> -->
+       <style>
+        body {
+            /* Set background image URL */
+            background-image: url(''); /* Replace with your image path */
+            /* Set background properties */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* Set other styles */
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            /* Add styles for content */
+            padding: 20px;
+            color: #ffffff; /* Set text color */
+        }
+        </style>
+    <script type="text/javascript" src='script2.js'></script>
+  </body>
+</html>

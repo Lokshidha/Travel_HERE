@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>Map with Route from A to B using Public Transport</title>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="styles3.css" />
+    <link rel="stylesheet" type="text/css" href="../template.css" />
+    <script type="text/javascript" charset="utf-8" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" ></script>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
+    <script type="text/javascript" src='script.js'></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <style type="text/css">
+      .directions li span.arrow {
+        display:inline-block;
+        min-width:28px;
+        min-height:28px;
+        background-position:0px;
+        background-image: url("https://heremaps.github.io/maps-api-for-javascript-examples/map-with-pedestrian-route-from-a-to-b/img/arrows.png");
+        position:relative;
+        top:8px;
+      }
+      .directions li span.depart  {
+        background-position:-28px;
+      }
+      .directions li span.rightturn  {
+        background-position:-224px;
+      }
+      .directions li span.leftturn{
+        background-position:-252px;
+      }
+      .directions li span.arrive  {
+        background-position:-1288px;
+      }
+      </style>
+  </head>
+  <!-- Add the following HTML inside the body tag -->
+<div>
+    <label for="start-input">Start Location (A):</label>
+    <input type="text" id="start-input" placeholder="Enter start location">
+    <button onclick="searchLocation('start')">Search A</button>
+</div>
+
+<div>
+    <label for="stop-input">Stop Location (B):</label>
+    <input type="text" id="stop-input" placeholder="Enter stop location">
+    <button onclick="searchLocation('stop')">Search B</button>
+</div>
+
+  <body id="map-with-route">
+    <div class="page-header">
+        <h1>Map with Route from A to B using Public Transport</h1>
+        <p>Request a route from A to B using public transport and display it on the map.</p>
+    </div>
+    <!-- <p>This example calculates a route from the <b>Fernsehturm</b> at Panoramastraße in Berlin
+      <i>(52.5208°N, 13.4093°E)</i> to <b>Kurfürstendamm</b> <i>(52.5034°N, 13.3295°E)</i> in the west of the
+      city using Public Transit API v8, and displays it on the map. The calculation
+      finds the fastest available route using public transport.</p> -->
+    <div id="map"></div>
+    <div id="panel"></div>
+    <h3>Code</h3>
+    <!-- <p>Access to the Public Transit API service is obtained from the <code>H.service.Platform</code> by calling
+      <code>getPublicTransitService()</code>. The <code>getRoutes()</code> method is used to calculate the fastest
+      public transport route by passing in the relevant parameters as defined in
+      <a href="https://www.here.com/docs/bundle/public-transit-api-v8-api-reference/page/index.html#tag/Routing" target="_blank">Public Transit API</a>.
+      The styling and display of the response is under the control of the developer.</p> -->
+    <script type="text/javascript" src='script3.js'></script>
+  </body>
+</html>
